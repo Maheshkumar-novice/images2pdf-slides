@@ -235,3 +235,4 @@ logs/
 !poetry.lock  # Keep poetry lock if you use poetry
 !package-lock.json  # Keep npm lock if you use npm
 !yarn.lock  # Keep yarn lock if you use yarn
+.claude/

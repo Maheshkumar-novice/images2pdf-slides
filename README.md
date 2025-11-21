@@ -33,7 +33,7 @@ A modern Python package that converts images in a folder into a professional PDF
 ### From PyPI (once published)
 
 ```bash
-pip install images-to-pdf
+pip install images2pdf-slides
 ```
 
 ### From Source
@@ -42,8 +42,8 @@ pip install images-to-pdf
 
 ```bash
 # Clone the repository
-git clone https://github.com/Maheshkumar-novice/images-to-pdf.git
-cd images-to-pdf
+git clone https://github.com/Maheshkumar-novice/images2pdf-slides.git
+cd images2pdf-slides
 
 # Install with UV
 uv pip install -e .
@@ -53,8 +53,8 @@ uv pip install -e .
 
 ```bash
 # Clone the repository
-git clone https://github.com/Maheshkumar-novice/images-to-pdf.git
-cd images-to-pdf
+git clone https://github.com/Maheshkumar-novice/images2pdf-slides.git
+cd images2pdf-slides
 
 # Install in editable mode
 pip install -e .
@@ -244,8 +244,8 @@ Adding slide 5/5: Screenshot 2025-11-20 at 4.38.44 PM.png
 
 ```bash
 # Clone the repository
-git clone https://github.com/Maheshkumar-novice/images-to-pdf.git
-cd images-to-pdf
+git clone https://github.com/Maheshkumar-novice/images2pdf-slides.git
+cd images2pdf-slides
 
 # Install with development dependencies using UV
 uv sync --all-extras
@@ -257,7 +257,7 @@ pip install -e ".[dev]"
 ### Project Structure
 
 ```
-images-to-pdf/
+images2pdf-slides/
 ├── src/
 │   └── images_to_pdf/
 │       ├── __init__.py      # Package initialization and exports
@@ -332,13 +332,13 @@ uv build
 uv publish --publish-url https://test.pypi.org/legacy/
 
 # 2. Verify installation from Test PyPI
-pip install --index-url https://test.pypi.org/simple/ images-to-pdf
+pip install --index-url https://test.pypi.org/simple/ images2pdf-slides
 
 # 3. If everything works, publish to production PyPI
 uv publish
 
 # 4. Install from PyPI
-pip install images-to-pdf
+pip install images2pdf-slides
 ```
 
 #### Publishing with Token
@@ -397,9 +397,9 @@ in the Software without restriction...
 
 ## 🔗 Links
 
-- **Homepage**: https://github.com/Maheshkumar-novice/images-to-pdf
-- **PyPI**: https://pypi.org/project/images-to-pdf/ (once published)
-- **Issues**: https://github.com/Maheshkumar-novice/images-to-pdf/issues
+- **Homepage**: https://github.com/Maheshkumar-novice/images2pdf-slides
+- **PyPI**: https://pypi.org/project/images2pdf-slides/ (once published)
+- **Issues**: https://github.com/Maheshkumar-novice/images2pdf-slides/issues
 - **Documentation**: This README
 
 ## ❓ FAQ

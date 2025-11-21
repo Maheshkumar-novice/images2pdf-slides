@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "images-to-pdf"
+name = "images2pdf-slides"
 version = "0.1.0"
 description = "Convert images in a folder to PDF slides with automatic resolution analysis"
 readme = "README.md"
@@ -45,9 +45,9 @@ dev = [
 images-to-pdf = "images_to_pdf.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/Maheshkumar-novice/images-to-pdf"
-Repository = "https://github.com/Maheshkumar-novice/images-to-pdf"
-Issues = "https://github.com/Maheshkumar-novice/images-to-pdf/issues"
+Homepage = "https://github.com/Maheshkumar-novice/images2pdf-slides"
+Repository = "https://github.com/Maheshkumar-novice/images2pdf-slides"
+Issues = "https://github.com/Maheshkumar-novice/images2pdf-slides/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/images_to_pdf"]

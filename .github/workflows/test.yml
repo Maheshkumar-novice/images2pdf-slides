@@ -35,4 +35,4 @@ jobs:
 
     - name: Test imports
       run: |
-        python -c "from images_to_pdf import create_pdf_from_images, analyze_image; print('Imports successful')"
+        python -c "from images2pdf_slides import create_pdf_from_images, analyze_image; print('Imports successful')"

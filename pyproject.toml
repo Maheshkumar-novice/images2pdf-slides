@@ -1,0 +1,68 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "images-to-pdf"
+version = "0.1.0"
+description = "Convert images in a folder to PDF slides with automatic resolution analysis"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Maheshkumar"}
+]
+keywords = ["pdf", "images", "converter", "slides", "presentation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Graphics :: Graphics Conversion",
+    "Topic :: Office/Business",
+]
+
+dependencies = [
+    "pillow>=10.0.0",
+    "reportlab>=4.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+]
+
+[project.scripts]
+images-to-pdf = "images_to_pdf.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Maheshkumar-novice/images-to-pdf"
+Repository = "https://github.com/Maheshkumar-novice/images-to-pdf"
+Issues = "https://github.com/Maheshkumar-novice/images-to-pdf/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/images_to_pdf"]
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    ".venv",
+    ".claude",
+    ".git",
+    ".github",
+    ".gitignore",
+    "dist",
+    "*.egg-info",
+    "__pycache__",
+    "*.pyc",
+    "*.pyo",
+    "CONTRIBUTING.md",
+]
